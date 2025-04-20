@@ -283,9 +283,10 @@ const Komentar = () => {
                     {comments.length === 0 ? (
                         <div className="text-center py-8" data-aos="fade-in">
                             <UserCircle2 className="w-12 h-12 text-indigo-400 mx-auto mb-3 opacity-50" />
-                            <p className="text-gray-400">No comments yet. Start the conversation!</p>
-                            <p className="text-gray-400">Comments section is under deelopment</p> {/* Added by Jay D. */}
-                            <p className="text-gray-400">Thank You for your co-operation!</p> {/* Added by Jay D. */}
+                            {/* <p className="text-gray-400">No comments yet. Start the conversation!</p> */}
+                            <p className="text-gray-400">No comments yet.</p>
+                            <p className="text-gray-400">🚀 Feature loading... This section is currently under development.</p> {/* Added by Jay D. */}
+                            <p className="text-gray-400">Stay tuned!</p>
                         </div>
                     ) : (
                         comments.map((comment, index) => (

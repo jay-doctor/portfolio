@@ -119,7 +119,7 @@ const techStacks = [
 
 export default function FullWidthTabs() {
   const theme = useTheme();
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(2); // Changed the value from 0 to 2 by Jay D.
   const [projects, setProjects] = useState([]);
   const [certificates, setCertificates] = useState([]);
   const [showAllProjects, setShowAllProjects] = useState(false);
@@ -198,8 +198,9 @@ export default function FullWidthTabs() {
           </span>
         </h2>
         <p className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2">
-          Explore my journey through projects, certifications, and technical expertise. 
-          Each section represents a milestone in my continuous learning path.
+          {/* Explore my journey through projects, certifications, and technical expertise.  */} {/* Commented by Jay D. */}
+          Explore my journey through technical expertise. {/* Added by Jay D. */}
+          The section represents a milestone in my continuous learning path. {/* Changed "From - The" by Jay D. */}
         </p>
       </div>
 
@@ -231,7 +232,7 @@ export default function FullWidthTabs() {
           {/* Tabs remain unchanged */}
           <Tabs
             value={value}
-            onChange={handleChange}
+            // onChange={handleChange} {/* Commented to disable change tabs by Jay D. */}
             textColor="secondary"
             indicatorColor="secondary"
             variant="fullWidth"
@@ -251,6 +252,7 @@ export default function FullWidthTabs() {
                 "&:hover": {
                   color: "#ffffff",
                   backgroundColor: "rgba(139, 92, 246, 0.1)",
+                  cursor: "default !important", // added for arrow cursor by Jay D.
                   transform: "translateY(-2px)",
                   "& .lucide": {
                     transform: "scale(1.1) rotate(5deg)",
@@ -273,7 +275,7 @@ export default function FullWidthTabs() {
               },
             }}
           >
-            <Tab
+            {/* <Tab
               icon={<Code className="mb-2 w-5 h-5 transition-all duration-300" />}
               label="Projects"
               {...a11yProps(0)}
@@ -282,7 +284,7 @@ export default function FullWidthTabs() {
               icon={<Award className="mb-2 w-5 h-5 transition-all duration-300" />}
               label="Certificates"
               {...a11yProps(1)}
-            />
+            /> */}
             <Tab
               icon={<Boxes className="mb-2 w-5 h-5 transition-all duration-300" />}
               label="Tech Stack"
@@ -296,7 +298,7 @@ export default function FullWidthTabs() {
           index={value}
           onChangeIndex={setValue}
         >
-          {/* Hidden - Projects cards */}
+          {/* Hidden - Projects cards by Jay D. */}
           <TabPanel value={value} index={0} dir={theme.direction}>
             <div className="hidden container mx-auto flex justify-center items-center overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-5">
@@ -327,7 +329,7 @@ export default function FullWidthTabs() {
             )}
           </TabPanel>
 
-          {/* Hidden - Certificates cards */}
+          {/* Hidden - Certificates cards by Jay D.*/}
           <TabPanel value={value} index={1} dir={theme.direction}>
             <div className="hidden container mx-auto flex justify-center items-center overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-3 md:gap-5 gap-4">
@@ -351,7 +353,7 @@ export default function FullWidthTabs() {
               </div>
             )}
           </TabPanel>
-            
+
           <TabPanel value={value} index={2} dir={theme.direction}>
             <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-8 gap-5">

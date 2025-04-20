@@ -150,7 +150,8 @@ const AboutPage = () => {
     return {
       totalProjects: storedProjects.length,
       totalCertificates: storedCertificates.length,
-      YearExperience: experienceStr
+      // YearExperience: experienceStr
+      YearExperience: 3 // Commented above and added static value by Jay D.
     };
   }, []);
 
@@ -241,8 +242,8 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              A Electrnics and Communication Engineering student interested in Software development.
-              I focus on creating engaging digital experiences and always strive to provide the best solution in every project.
+              A Electrical and Microsystems Engineering student interested in Software development. 
+              I focus on creating and engaging digital experiences and always strive to provide the best solution in every project.
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">

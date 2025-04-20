@@ -77,7 +77,7 @@ const SocialLink = memo(({ icon: Icon, link }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Elect. and Comm. Engineer", "Tech Enthusiast"];
+const WORDS = ["Electronics and Comms Engineer", "Tech Enthusiast"];
 const TECH_STACK = ["ReactJS", "Javascript", "Salesforce - LWC", "Material UI"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/jay-doctor" },
@@ -194,7 +194,7 @@ const Home = () => {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-row gap-3 w-full justify-start" data-aos="fade-up" data-aos-delay="1400">
-                  <CTAButton href="#Portofolio" text="Projects" icon={ExternalLink} />
+                  {/* <CTAButton href="#Portofolio" text="Projects" icon={ExternalLink} /> */} {/* Commented hidden by Jay D. */}
                   <CTAButton href="#Contact" text="Contact" icon={Mail} />
                 </div>
 
