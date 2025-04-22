@@ -81,7 +81,7 @@ const WORDS = ["Electronics and Comms Engineer", "Tech Enthusiast"];
 const TECH_STACK = ["ReactJS", "Javascript", "Salesforce - LWC", "Material UI"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/jay-doctor" },
-  { icon: Linkedin, link: "www.linkedin.com/in/jaydoctor" },
+  { icon: Linkedin, link: "https://www.linkedin.com/in/jaydoctor" },
   { icon: Instagram, link: "https://www.instagram.com/j.d.doctor?igsh=MXh1NWJ2eHZjNW1idA==" }
 ];
 
